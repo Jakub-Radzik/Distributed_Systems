@@ -13,97 +13,35 @@ public final class GrpcServiceGrpc {
   public static final String SERVICE_NAME = "GrpcService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<GrpcRequest,
-      GrpcResponse> getGrpcStoreDataMethod;
+  private static volatile io.grpc.MethodDescriptor<GrpcRequestSavePerson,
+      GrpcResponse> getGrpcSavePersonMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "grpcStoreData",
-      requestType = GrpcRequest.class,
+      fullMethodName = SERVICE_NAME + '/' + "grpcSavePerson",
+      requestType = GrpcRequestSavePerson.class,
       responseType = GrpcResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<GrpcRequest,
-      GrpcResponse> getGrpcStoreDataMethod() {
-    io.grpc.MethodDescriptor<GrpcRequest, GrpcResponse> getGrpcStoreDataMethod;
-    if ((getGrpcStoreDataMethod = GrpcServiceGrpc.getGrpcStoreDataMethod) == null) {
+  public static io.grpc.MethodDescriptor<GrpcRequestSavePerson,
+      GrpcResponse> getGrpcSavePersonMethod() {
+    io.grpc.MethodDescriptor<GrpcRequestSavePerson, GrpcResponse> getGrpcSavePersonMethod;
+    if ((getGrpcSavePersonMethod = GrpcServiceGrpc.getGrpcSavePersonMethod) == null) {
       synchronized (GrpcServiceGrpc.class) {
-        if ((getGrpcStoreDataMethod = GrpcServiceGrpc.getGrpcStoreDataMethod) == null) {
-          GrpcServiceGrpc.getGrpcStoreDataMethod = getGrpcStoreDataMethod =
-              io.grpc.MethodDescriptor.<GrpcRequest, GrpcResponse>newBuilder()
+        if ((getGrpcSavePersonMethod = GrpcServiceGrpc.getGrpcSavePersonMethod) == null) {
+          GrpcServiceGrpc.getGrpcSavePersonMethod = getGrpcSavePersonMethod =
+              io.grpc.MethodDescriptor.<GrpcRequestSavePerson, GrpcResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "grpcStoreData"))
+              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "grpcSavePerson"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  GrpcRequest.getDefaultInstance()))
+                  GrpcRequestSavePerson.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
                   GrpcResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new GrpcServiceMethodDescriptorSupplier("grpcStoreData"))
+              .setSchemaDescriptor(new GrpcServiceMethodDescriptorSupplier("grpcSavePerson"))
               .build();
         }
       }
     }
-    return getGrpcStoreDataMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<GrpcRequestFibo,
-      GrpcResponseFibo> getGrpcFiboMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "grpcFibo",
-      requestType = GrpcRequestFibo.class,
-      responseType = GrpcResponseFibo.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<GrpcRequestFibo,
-      GrpcResponseFibo> getGrpcFiboMethod() {
-    io.grpc.MethodDescriptor<GrpcRequestFibo, GrpcResponseFibo> getGrpcFiboMethod;
-    if ((getGrpcFiboMethod = GrpcServiceGrpc.getGrpcFiboMethod) == null) {
-      synchronized (GrpcServiceGrpc.class) {
-        if ((getGrpcFiboMethod = GrpcServiceGrpc.getGrpcFiboMethod) == null) {
-          GrpcServiceGrpc.getGrpcFiboMethod = getGrpcFiboMethod =
-              io.grpc.MethodDescriptor.<GrpcRequestFibo, GrpcResponseFibo>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "grpcFibo"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  GrpcRequestFibo.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  GrpcResponseFibo.getDefaultInstance()))
-              .setSchemaDescriptor(new GrpcServiceMethodDescriptorSupplier("grpcFibo"))
-              .build();
-        }
-      }
-    }
-    return getGrpcFiboMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<DownloadFileRequest,
-      DataChunk> getGrpcDownloadPicMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "grpcDownloadPic",
-      requestType = DownloadFileRequest.class,
-      responseType = DataChunk.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-  public static io.grpc.MethodDescriptor<DownloadFileRequest,
-      DataChunk> getGrpcDownloadPicMethod() {
-    io.grpc.MethodDescriptor<DownloadFileRequest, DataChunk> getGrpcDownloadPicMethod;
-    if ((getGrpcDownloadPicMethod = GrpcServiceGrpc.getGrpcDownloadPicMethod) == null) {
-      synchronized (GrpcServiceGrpc.class) {
-        if ((getGrpcDownloadPicMethod = GrpcServiceGrpc.getGrpcDownloadPicMethod) == null) {
-          GrpcServiceGrpc.getGrpcDownloadPicMethod = getGrpcDownloadPicMethod =
-              io.grpc.MethodDescriptor.<DownloadFileRequest, DataChunk>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.SERVER_STREAMING)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "grpcDownloadPic"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  DownloadFileRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  DataChunk.getDefaultInstance()))
-              .setSchemaDescriptor(new GrpcServiceMethodDescriptorSupplier("grpcDownloadPic"))
-              .build();
-        }
-      }
-    }
-    return getGrpcDownloadPicMethod;
+    return getGrpcSavePersonMethod;
   }
 
   private static volatile io.grpc.MethodDescriptor<ReadInfoRequest,
@@ -135,37 +73,6 @@ public final class GrpcServiceGrpc {
       }
     }
     return getGrpcReadInfoMethod;
-  }
-
-  private static volatile io.grpc.MethodDescriptor<SumRequest,
-      SumResponse> getGrpcSumMethod;
-
-  @io.grpc.stub.annotations.RpcMethod(
-      fullMethodName = SERVICE_NAME + '/' + "grpcSum",
-      requestType = SumRequest.class,
-      responseType = SumResponse.class,
-      methodType = io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-  public static io.grpc.MethodDescriptor<SumRequest,
-      SumResponse> getGrpcSumMethod() {
-    io.grpc.MethodDescriptor<SumRequest, SumResponse> getGrpcSumMethod;
-    if ((getGrpcSumMethod = GrpcServiceGrpc.getGrpcSumMethod) == null) {
-      synchronized (GrpcServiceGrpc.class) {
-        if ((getGrpcSumMethod = GrpcServiceGrpc.getGrpcSumMethod) == null) {
-          GrpcServiceGrpc.getGrpcSumMethod = getGrpcSumMethod =
-              io.grpc.MethodDescriptor.<SumRequest, SumResponse>newBuilder()
-              .setType(io.grpc.MethodDescriptor.MethodType.CLIENT_STREAMING)
-              .setFullMethodName(generateFullMethodName(SERVICE_NAME, "grpcSum"))
-              .setSampledToLocalTracing(true)
-              .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SumRequest.getDefaultInstance()))
-              .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  SumResponse.getDefaultInstance()))
-              .setSchemaDescriptor(new GrpcServiceMethodDescriptorSupplier("grpcSum"))
-              .build();
-        }
-      }
-    }
-    return getGrpcSumMethod;
   }
 
   /**
@@ -218,23 +125,9 @@ public final class GrpcServiceGrpc {
 
     /**
      */
-    public void grpcStoreData(GrpcRequest request,
+    public void grpcSavePerson(GrpcRequestSavePerson request,
         io.grpc.stub.StreamObserver<GrpcResponse> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGrpcStoreDataMethod(), responseObserver);
-    }
-
-    /**
-     */
-    public void grpcFibo(GrpcRequestFibo request,
-        io.grpc.stub.StreamObserver<GrpcResponseFibo> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGrpcFiboMethod(), responseObserver);
-    }
-
-    /**
-     */
-    public void grpcDownloadPic(DownloadFileRequest request,
-        io.grpc.stub.StreamObserver<DataChunk> responseObserver) {
-      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGrpcDownloadPicMethod(), responseObserver);
+      io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGrpcSavePersonMethod(), responseObserver);
     }
 
     /**
@@ -244,36 +137,15 @@ public final class GrpcServiceGrpc {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getGrpcReadInfoMethod(), responseObserver);
     }
 
-    /**
-     */
-    public io.grpc.stub.StreamObserver<SumRequest> grpcSum(
-        io.grpc.stub.StreamObserver<SumResponse> responseObserver) {
-      return io.grpc.stub.ServerCalls.asyncUnimplementedStreamingCall(getGrpcSumMethod(), responseObserver);
-    }
-
     @java.lang.Override public final io.grpc.ServerServiceDefinition bindService() {
       return io.grpc.ServerServiceDefinition.builder(getServiceDescriptor())
           .addMethod(
-            getGrpcStoreDataMethod(),
+            getGrpcSavePersonMethod(),
             io.grpc.stub.ServerCalls.asyncUnaryCall(
               new MethodHandlers<
-                GrpcRequest,
+                GrpcRequestSavePerson,
                 GrpcResponse>(
-                  this, METHODID_GRPC_STORE_DATA)))
-          .addMethod(
-            getGrpcFiboMethod(),
-            io.grpc.stub.ServerCalls.asyncServerStreamingCall(
-              new MethodHandlers<
-                GrpcRequestFibo,
-                GrpcResponseFibo>(
-                  this, METHODID_GRPC_FIBO)))
-          .addMethod(
-            getGrpcDownloadPicMethod(),
-            io.grpc.stub.ServerCalls.asyncServerStreamingCall(
-              new MethodHandlers<
-                DownloadFileRequest,
-                DataChunk>(
-                  this, METHODID_GRPC_DOWNLOAD_PIC)))
+                  this, METHODID_GRPC_SAVE_PERSON)))
           .addMethod(
             getGrpcReadInfoMethod(),
             io.grpc.stub.ServerCalls.asyncServerStreamingCall(
@@ -281,13 +153,6 @@ public final class GrpcServiceGrpc {
                 ReadInfoRequest,
                 ReadInfoResponse>(
                   this, METHODID_GRPC_READ_INFO)))
-          .addMethod(
-            getGrpcSumMethod(),
-            io.grpc.stub.ServerCalls.asyncClientStreamingCall(
-              new MethodHandlers<
-                SumRequest,
-                SumResponse>(
-                  this, METHODID_GRPC_SUM)))
           .build();
     }
   }
@@ -308,26 +173,10 @@ public final class GrpcServiceGrpc {
 
     /**
      */
-    public void grpcStoreData(GrpcRequest request,
+    public void grpcSavePerson(GrpcRequestSavePerson request,
         io.grpc.stub.StreamObserver<GrpcResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
-          getChannel().newCall(getGrpcStoreDataMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
-    public void grpcFibo(GrpcRequestFibo request,
-        io.grpc.stub.StreamObserver<GrpcResponseFibo> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncServerStreamingCall(
-          getChannel().newCall(getGrpcFiboMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
-    public void grpcDownloadPic(DownloadFileRequest request,
-        io.grpc.stub.StreamObserver<DataChunk> responseObserver) {
-      io.grpc.stub.ClientCalls.asyncServerStreamingCall(
-          getChannel().newCall(getGrpcDownloadPicMethod(), getCallOptions()), request, responseObserver);
+          getChannel().newCall(getGrpcSavePersonMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
@@ -336,14 +185,6 @@ public final class GrpcServiceGrpc {
         io.grpc.stub.StreamObserver<ReadInfoResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncServerStreamingCall(
           getChannel().newCall(getGrpcReadInfoMethod(), getCallOptions()), request, responseObserver);
-    }
-
-    /**
-     */
-    public io.grpc.stub.StreamObserver<SumRequest> grpcSum(
-        io.grpc.stub.StreamObserver<SumResponse> responseObserver) {
-      return io.grpc.stub.ClientCalls.asyncClientStreamingCall(
-          getChannel().newCall(getGrpcSumMethod(), getCallOptions()), responseObserver);
     }
   }
 
@@ -363,25 +204,9 @@ public final class GrpcServiceGrpc {
 
     /**
      */
-    public GrpcResponse grpcStoreData(GrpcRequest request) {
+    public GrpcResponse grpcSavePerson(GrpcRequestSavePerson request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
-          getChannel(), getGrpcStoreDataMethod(), getCallOptions(), request);
-    }
-
-    /**
-     */
-    public java.util.Iterator<GrpcResponseFibo> grpcFibo(
-        GrpcRequestFibo request) {
-      return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
-          getChannel(), getGrpcFiboMethod(), getCallOptions(), request);
-    }
-
-    /**
-     */
-    public java.util.Iterator<DataChunk> grpcDownloadPic(
-        DownloadFileRequest request) {
-      return io.grpc.stub.ClientCalls.blockingServerStreamingCall(
-          getChannel(), getGrpcDownloadPicMethod(), getCallOptions(), request);
+          getChannel(), getGrpcSavePersonMethod(), getCallOptions(), request);
     }
 
     /**
@@ -409,18 +234,15 @@ public final class GrpcServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<GrpcResponse> grpcStoreData(
-        GrpcRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<GrpcResponse> grpcSavePerson(
+        GrpcRequestSavePerson request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
-          getChannel().newCall(getGrpcStoreDataMethod(), getCallOptions()), request);
+          getChannel().newCall(getGrpcSavePersonMethod(), getCallOptions()), request);
     }
   }
 
-  private static final int METHODID_GRPC_STORE_DATA = 0;
-  private static final int METHODID_GRPC_FIBO = 1;
-  private static final int METHODID_GRPC_DOWNLOAD_PIC = 2;
-  private static final int METHODID_GRPC_READ_INFO = 3;
-  private static final int METHODID_GRPC_SUM = 4;
+  private static final int METHODID_GRPC_SAVE_PERSON = 0;
+  private static final int METHODID_GRPC_READ_INFO = 1;
 
   private static final class MethodHandlers<Req, Resp> implements
       io.grpc.stub.ServerCalls.UnaryMethod<Req, Resp>,
@@ -439,17 +261,9 @@ public final class GrpcServiceGrpc {
     @java.lang.SuppressWarnings("unchecked")
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GRPC_STORE_DATA:
-          serviceImpl.grpcStoreData((GrpcRequest) request,
+        case METHODID_GRPC_SAVE_PERSON:
+          serviceImpl.grpcSavePerson((GrpcRequestSavePerson) request,
               (io.grpc.stub.StreamObserver<GrpcResponse>) responseObserver);
-          break;
-        case METHODID_GRPC_FIBO:
-          serviceImpl.grpcFibo((GrpcRequestFibo) request,
-              (io.grpc.stub.StreamObserver<GrpcResponseFibo>) responseObserver);
-          break;
-        case METHODID_GRPC_DOWNLOAD_PIC:
-          serviceImpl.grpcDownloadPic((DownloadFileRequest) request,
-              (io.grpc.stub.StreamObserver<DataChunk>) responseObserver);
           break;
         case METHODID_GRPC_READ_INFO:
           serviceImpl.grpcReadInfo((ReadInfoRequest) request,
@@ -465,9 +279,6 @@ public final class GrpcServiceGrpc {
     public io.grpc.stub.StreamObserver<Req> invoke(
         io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
-        case METHODID_GRPC_SUM:
-          return (io.grpc.stub.StreamObserver<Req>) serviceImpl.grpcSum(
-              (io.grpc.stub.StreamObserver<SumResponse>) responseObserver);
         default:
           throw new AssertionError();
       }
@@ -519,11 +330,8 @@ public final class GrpcServiceGrpc {
         if (result == null) {
           serviceDescriptor = result = io.grpc.ServiceDescriptor.newBuilder(SERVICE_NAME)
               .setSchemaDescriptor(new GrpcServiceFileDescriptorSupplier())
-              .addMethod(getGrpcStoreDataMethod())
-              .addMethod(getGrpcFiboMethod())
-              .addMethod(getGrpcDownloadPicMethod())
+              .addMethod(getGrpcSavePersonMethod())
               .addMethod(getGrpcReadInfoMethod())
-              .addMethod(getGrpcSumMethod())
               .build();
         }
       }
