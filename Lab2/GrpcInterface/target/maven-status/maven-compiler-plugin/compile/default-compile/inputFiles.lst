@@ -1,18 +1,10 @@
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\ReadInfoResponse.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcRequest.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcResponseOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\grpc-java\GrpcServiceGrpc.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcAppProto.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\ReadInfoResponseOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\DownloadFileRequestOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcResponseFibo.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcRequestFibo.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\ReadInfoRequestOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\DataChunk.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcResponse.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\DataChunkOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\ReadInfoRequest.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcRequestFiboOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\DownloadFileRequest.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcResponseFiboOrBuilder.java
-C:\Users\Mustafa\OneDrive\Documents\GitHub\DCS\Lab2\GrpcInterface\target\generated-sources\protobuf\java\GrpcRequestOrBuilder.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/GrpcAppProto.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/GrpcResponse.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/ReadInfoResponseOrBuilder.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/ReadInfoResponse.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/ReadInfoRequest.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/GrpcResponseOrBuilder.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/ReadInfoRequestOrBuilder.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/GrpcRequestSavePersonOrBuilder.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/java/GrpcRequestSavePerson.java
+/Users/jakubradzik-vazco/Desktop/STUDIA SEM 6/Distributed_Systems/Lab2/GrpcInterface/target/generated-sources/protobuf/grpc-java/GrpcServiceGrpc.java

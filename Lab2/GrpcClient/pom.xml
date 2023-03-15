@@ -31,7 +31,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>GrpcServer</mainClass>
+                            <mainClass>GrpcClient</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
