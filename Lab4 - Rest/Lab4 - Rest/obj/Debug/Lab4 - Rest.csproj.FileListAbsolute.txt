@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\bin\Lab4 - Rest.dll.config
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\bin\Lab4 - Rest.dll
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\bin\Lab4 - Rest.pdb
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\obj\Debug\Lab4 - Rest.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\obj\Debug\Lab4 - Rest.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\obj\Debug\Lab4 - Rest.dll
+C:\Users\User\source\repos\Lab4 - Rest\Lab4 - Rest\obj\Debug\Lab4 - Rest.pdb
