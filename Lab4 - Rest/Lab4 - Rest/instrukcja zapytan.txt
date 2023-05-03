@@ -25,3 +25,7 @@ http://localhost:57099/Service1.svc/json/book
     "name": "name",
     "author": "aut"
 }
+
+---
+http://localhost:57099/Service1.svc/help
+
