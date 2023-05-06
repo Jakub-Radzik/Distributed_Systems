@@ -24,8 +24,8 @@ fetch('http://localhost:57099/Service1.svc/json/books')
           let but_td = document.createElement("td")
           let but_obj = document.createElement("a")
           let but_i = document.createElement("i")
-          but_obj.className = "btn btn-secondary"
-          but_obj.href = "details.html"
+          but_obj.className = "btn btn-secondary btn-detail"
+          but_obj.setAttribute("clicked_book_id", book.id_element)
           but_i.className = "fas fa-angle-double-right"
           but_obj.innerText = "Details"
           but_obj.appendChild(but_i)
