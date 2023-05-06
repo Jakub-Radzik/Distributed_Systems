@@ -34,5 +34,9 @@ fetch('http://localhost:57099/Service1.svc/json/books')
 
           list.appendChild(tr)
 
+
         })
+
+        var num = document.getElementById('num-of-books')
+        num.innerHTML = `<i class="fas fa-folder"></i> ` + data.length
     })
