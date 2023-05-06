@@ -48,23 +48,25 @@
         </div>
     </header>
     <!--actions-->
-    <section id="actions" class="py-4 mb-4 bg-light">
+    <section id="actions" class="py-4 bg-light">
         <div class="container">
-            <div class="row">
+            <div>
                 <div class="col-md-3">
                     <a href="index.html" class="btn btn-light btn-block">
                         <i class="fas fa-arrow-left"></i> Back To Dashboard
                     </a>
                 </div>
-                <div class="col-md-3">
-                    <a href="index.html" class="btn btn-success btn-block">
-                        Save changes
-                    </a>
-                </div>
-                <div class="col-md-3">
-                    <a class="btn btn-danger btn-block btn-delete">
-                        <i class="fas fa-trash"></i> Delete Book
-                    </a>
+                <div class="row" id="detail-btns">
+                    <div class="col-md-3">
+                        <a href="index.html" class="btn btn-success btn-block">
+                            Save changes
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a class="btn btn-danger btn-block btn-delete">
+                            <i class="fas fa-trash"></i> Delete Book
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -78,7 +80,7 @@
                         <div class="card-header">
                             <h4 id="detail-header"></h4>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" id="detail-outer">
                             <form>
                                 <div class="form-group">
                                     <label for="name">Name</label>

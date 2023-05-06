@@ -9,7 +9,21 @@ $(document).on('click', '.btn-create', function() {
         name: formArray[1].value,
         author: formArray[2].value
     }
-    console.log(requestBody)
+    
+    if (!(/^.\d+$/.test(formArray[0].value))) {
+        var target = document.getElementById('error-div')
+        target.innerText = "Id must be an integer!"
+        return
+    }
+    else if (formArray[0].value < 0) {
+        var target = document.getElementById('error-div')
+        target.innerText = "Id can not be negative!"
+        return
+    }
+
+    var target = document.getElementById('error-div')
+    target.innerText = "Created successfully!"
+    
     try {
     fetch('http://localhost:57099/Service1.svc/json/book', {
         method: 'POST',
@@ -23,6 +37,7 @@ $(document).on('click', '.btn-create', function() {
     })
     .then(data => {
             console.log(data)
+
         })
     }
     catch (error) {
