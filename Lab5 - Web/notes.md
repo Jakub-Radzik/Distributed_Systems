@@ -1,0 +1,33 @@
+# API
+
+GET: 
+http://localhost:57099/Service1.svc/json/books
+http://localhost:57099/Service1.svc/books
+
+http://localhost:57099/Service1.svc/json/books/1
+http://localhost:57099/Service1.svc/books/1
+
+DELETE:
+
+http://localhost:57099/Service1.svc/books/1
+http://localhost:57099/Service1.svc/json/books/1
+
+POST:
+http://localhost:57099/Service1.svc/book
+
+<Book xmlns="http://schemas.datacontract.org/2004/07/Lab4___Rest" xmlns:i="http://www.w3.org/2001/XMLSchema-instance">
+    <id_element>5</id_element>
+    <name>name 1</name>
+    <author>author 1</author>
+</Book>
+
+http://localhost:57099/Service1.svc/json/book
+{
+    "id_element": "11",
+    "name": "name",
+    "author": "aut"
+}
+
+---
+http://localhost:57099/Service1.svc/help
+
