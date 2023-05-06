@@ -1,5 +1,4 @@
 
-console.log("enteted")
 fetch('http://localhost:57099/Service1.svc/json/books')
     .then(res => {
         return res.json()
